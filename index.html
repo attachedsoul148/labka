@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume – Pavlo Kozak</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pavlo Kozak</h1>
+
+        <div class="contact">
+            <p><strong>Email:</strong> luciodeuspriest@gmail.com</p>
+            <p><strong>Location:</strong> Lviv, Ukraine</p>
+        </div>
+
+        <section>
+            <h2>Summary of Qualifications</h2>
+            <ul>
+                <li>Versatile technical background including development experience</li>
+                <li>Experience in analyzing and optimizing business processes</li>
+                <li>Strong analytical skills backed by math expertise and teaching experience</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, JavaScript, TypeScript</li>
+                <li><strong>Databases & Querying:</strong> SQL (MySQL)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li>Ukrainian – Native Proficiency</li>
+                <li>English – Full Professional Proficiency (B2)</li>
+                <li>German – Basic Working Proficiency (A2)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Related Experience</h2>
+            <h3>TimeLine Tattoo Studio – Lviv, Ukraine</h3>
+            <p><strong>Business Development Manager</strong> (March 2024 – Present)</p>
+            <ul>
+                <li>Analyzed and optimized business processes, allowing the company to become competitive in 3 months</li>
+                <li>Performed competitor analysis resulting in an 80% increase in customer interest</li>
+                <li>Evaluated metrics to identify business success factors</li>
+                <li>Streamlined workflows to save time and boost team morale</li>
+                <li>Created engaging content ideas for customer interaction</li>
+            </ul>
+
+            <h3>Freelance – Remote</h3>
+            <p><strong>Frontend Developer</strong> (June 2022 – December 2023)</p>
+            <ul>
+                <li>Translated client business needs into technical solutions</li>
+                <li>Developed web applications meeting all business requirements</li>
+                <li>Optimized performance and reduced application load time</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Project Experience</h2>
+            <h3>ESports Center (ESC) – Lviv, Ukraine</h3>
+            <p><strong>Team Project Class</strong> (September 2023 – December 2023)</p>
+            <ul>
+                <li>Collaborated in a university project with SoftServe mentorship</li>
+                <li>Analyzed competitors to build unique functionality</li>
+                <li>Used Next.js and TypeScript for web development</li>
+                <li>Integrated a backend database into the frontend</li>
+                <li>Presented the project at the SoftServe office</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <p><strong>Lviv Polytechnic National University (LPNU)</strong><br>
+               Bachelor of Science in Cybersecurity<br>
+               Expected Graduation: June 2026<br>
+               GPA: 92.73 / 100</p>
+            <ul>
+                <li>Co-authored a research paper: “Pseudorandom sequence generator based on the computation of ln 2”, published in CEUR Workshop Proceedings</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Python - Complete Python, Django, Data Science and ML Guide</li>
+                <li>MySQL Bootcamp: Go from SQL Beginner to Expert</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Honors & Involvement</h2>
+            <ul>
+                <li>Top student in the Faculty of Cybersecurity (1st semester, 2022)</li>
+                <li>Taught higher mathematics at university, substituting professors</li>
+            </ul>
+        </section>
+
+        <section id="comments-section">
+            <h2>Employer Comments</h2>
+            <div id="comments"></div>
+        </section>
+    </div>
+
+    <!-- Footer for localStorage info -->
+    <footer id="footer"></footer>
+
+    <!-- Feedback Modal -->
+    <div id="feedback-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Feedback Form</h2>
+                <span id="modal-close" class="close">&times;</span>
+            </div>
+            <form action="https://formspree.io/f/mwpldkqe" method="POST" class="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Theme toggle -->
+    <button id="theme-toggle">Toggle Day/Night</button>
+</body>
+</html>
